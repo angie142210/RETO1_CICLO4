@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card card-container">
+            
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" id="form">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="name" name="names" class="form-control" placeholder="Nombre"required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico"required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña"required>
+                <input type="password" id="inputPassword2" class="form-control" placeholder="Confirmar Contraseña"required>
+                <div id="alert"></div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" onclick="guardar()">Crear cuenta</button>
+            </form><!-- /form -->
+            <a href="index.html" class="forgot-password">
+                Iniciar Sesión
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+<script src="js/funciones.js"></script>
+</body>
+</html>
