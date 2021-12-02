@@ -56,7 +56,7 @@ function guardar() {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(1);
+
 })
 
 function login() {
