@@ -19,7 +19,8 @@ function guardar() {
 
         } else {
             $.ajax({
-                url: 'http://localhost:8080/api/user/new',
+                //url: 'http://localhost:8080/api/user/new',
+                url: 'http://150.230.81.229:8080/api/user/new',
                 data: JSON.stringify({
                     "email": email,
                     "password": password,
@@ -64,7 +65,8 @@ function login() {
     let password = document.getElementById('inputPassword').value.trim();
     if (email != "" && password != "") {
         $.ajax({
-            url: 'http://localhost:8080/api/user/' + email + '/' + password,
+            //url: 'http://localhost:8080/api/user/' + email + '/' + password,
+            url: 'http://150.230.81.229:8080/api/user/' + email + '/' + password,
             contenType: 'application/json',
             dataType: 'json',
             error: function (response) {
